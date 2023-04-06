@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card-header">Creation de Local</div>
+  <div class="card-body">
+    <div class="form-control">
+      <label for="ref">ref</label>
+      <input id="ref" type="text" class="form-group" [(ngModel)]="local.ref">
+    </div>
+    <div class="form-control">
+      <label for="cin">cin</label>
+      <input id="cin" type="text" class="form-group" [(ngModel)]="local.cin">
+    </div>
+    <div class="form-control">
+      <label for="rueCode">Rue Code </label>
+      <input id="rueCode" type="text" class="form-group" [(ngModel)]="local.rueCode">
+    </div>
+    <div class="form-control">
+      <label for="Categorie local">Categorie local Name</label>
+      <input id="Categorie local" type="text" class="form-group" [(ngModel)]="local.categorieLocalName">
+    </div>
+    <div class="form-control">
+      <label for="Dernier Annee Payee">Dernier Annee Payee</label>
+      <input id="Dernier Annee Payee" type="text" class="form-group" [(ngModel)]="local.dernierAnneePayee">
+    </div>
+    <div class="form-control">
+      <label for="Dernier Trimestre Payee">Dernier Trimestre Payee</label>
+      <input id="Dernier Trimestre Payee" type="text" class="form-group" [(ngModel)]="local.dernierTrimestrePayee">
+    </div>
+
+
+  </div>
+<div class="card-footer">
+  <button class="btn btn-success" (click)="save()">Valider</button>
+</div>
+</div>
