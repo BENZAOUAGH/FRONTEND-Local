@@ -23,7 +23,6 @@ export class LocalCreateComponent implements OnInit {
   public save():void{
     this.localService.save().subscribe(data => {
       if(data == 1){
-        this.locals.push({...this.local});
         alert('SAVE SUCCESS');
       }else {
         alert('SAVE ERROR ::: REF EXIST ')

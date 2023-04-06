@@ -11,7 +11,7 @@ import {Observable} from "rxjs";
 export class LocalListComponent implements OnInit{
   searchText:any;
 
-  localInfos:any;
+
     constructor(private localService : LocalService ) {}
 
      ngOnInit():void {
@@ -19,7 +19,7 @@ export class LocalListComponent implements OnInit{
      }
 
   public findAll(): void{
-      this.localService.findAll().subscribe(data => this.localInfos = data);
+      this.localService.findAll().subscribe(data => this.locals = data);
   }
   get local(): Local {
     return this.localService.local;

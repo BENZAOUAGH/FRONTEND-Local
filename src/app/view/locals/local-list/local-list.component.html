@@ -11,21 +11,19 @@
 <div class="card">
   <div class="card-body">
 
-    <table class="table table-hover table-striped ">
+    <table class="table">
       <thead>
       <th>Cin</th>
       <th>Reference</th>
-      <th>Redevable</th>
       <th>categorieLocal</th>
       <th>Dernieranneepayee</th>
       <th>dernierTrimestrePayee</th>
       </thead>
       <tbody>
-      <tr  *ngFor="let l of localInfos | filter:searchText">
-        <td>{{l.redevable.cin}}</td>
+      <tr  *ngFor="let l of locals | filter:searchText">
+        <td>{{l.cin}}</td>
         <td>{{l.ref}}</td>
-        <td>{{l.redevable}}</td>
-        <td>{{l.categorieLocal}}</td>
+        <td>{{l.categorieLocalName}}</td>
         <td>{{l.dernierAnneePayee}}</td>
         <td>{{l.dernierTrimestrePayee}}</td>
       </tr>

@@ -10,11 +10,11 @@ import {Local} from "src/app/controler/model/local.model";
 })
 export class LocalService {
 
-  private _local : Local=new Local();
+   _local : Local=new Local();
   private _locals : Array<Local>=new Array<Local>();
-  private url= 'http://localhost:8036/api/v1/' + 'local/';
+  private url= 'http://localhost:8036/api/v1/local/';
   public save(): Observable<number>{
-    return this.http.post<number>(this.url,this.local);
+    return this.http.post<number>(this.url, this.local);
   }
 
   public findAll(): Observable<Array<Local>>{
